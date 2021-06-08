@@ -1,0 +1,1 @@
+{"version":3,"sources":["ts.ts"],"names":[],"mappings":"AAAA,IAAI,CAAC,GAAG,cAAM,OAAA,KAAK,CAAC,aAAa,CAAC,EAApB,CAAoB,CAAA","file":"ts.js","sourcesContent":["let x = () => alert('Hello World')"],"sourceRoot":"/source/"}

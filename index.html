@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta lang="ru">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Алесь Петроченко. Alex Petrochenko">
+    <meta name="description" content="Портфолио, Шпаргалка">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Alex P. Protfolio</title>
+</head>
+<body id="main">
+    <svg id="scroller" width="100" height="100">
+	<circle class="svg_circle" cx="40" cy="40" r="35"></circle>
+	<polyline class="svg_polyline" points="20,50 40,30 60,50"></polyline>
+</svg>
+    <header>
+        <nav class="navigation page-wrapper_100">
+    <div class="page-wrapper_80">
+        <div class="burger">
+            <div class="burger_button" id="burger_button">
+                <div class="burger_button__bar1"></div>
+                <div class="burger_button__bar2"></div>
+                <div class="burger_button__bar3"></div>
+            </div>
+        </div>
+        <ul class="list">
+            <li class="list-item">
+                <a data-anchor="main" class="list-link list-link_code">Главная</a>
+            </li>
+            <li class="list-item">
+                <a data-anchor="my-works" class="list-link list-link_code">Мои работы</a>
+            </li>
+            <li class="list-item">
+                <a data-anchor="about-me" class="list-link list-link_code">Обо мне</a>
+            </li>
+            <li class="list-item">
+                <a data-anchor="hints" class="list-link list-link_code">Шпаргалка</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+        <section class="greetings">
+    <div class="greetings__card page-wrapper_80">
+        <p>
+            Привет друг!
+            <br>
+            Проходи и чувствуй себя как дома.
+            <br>
+            <br>
+             Можешь посмотреть <a data-anchor="my-works" class="my-works_button attention">мои&nbsp;работы</a> 
+            <br>
+            <br>
+            Ну или загляни в <a data-anchor="hints" class="my-hints_button attention">шпаргалку</a>, может быть найдешь что-нибудь интересное.
+            <br>
+        </p>
+    </div>
+</section>
+    </header>
+    <main>
+        <section class="my-works_wrapper" id="my-works">
+    <div class="page-wrapper_80 my-works" >
+        <div id="multipage" class="work">
+            <img class="work_img" src="img/multipage.png" alt="multipage site" data-img="img/multipage_full.jpg" data-caption="https://github.com/AlexJustFly/multipage-site-model">
+        </div>
+        <div id="bicycle" class="work">
+            <img class="work_img" src="img/bicycle.png" alt="bicycle site" data-img="img/bicycle_full.jpg" data-caption="https://github.com/AlexJustFly/Bicycle-site-model">
+        </div>
+        <div id="animal" class="work">
+            <img class="work_img" src="img/animal.png" alt="animal site" data-img="img/animal_full.jpg" data-caption="https://github.com/AlexJustFly/theyalow">
+        </div>
+        <div id="wedding" class="work">
+            <img class="work_img" src="img/wedding.png" alt="wedding site" data-img="img/wedding_full.jpg" data-caption="https://github.com/AlexJustFly/Wedding-site-model">
+        </div>
+        <div id="bandi" class="work">
+            <img class="work_img" src="img/bandi.png" alt="bandi site" data-img="img/bandi_full.jpg" data-caption="https://github.com/AlexJustFly/bandi-site-model">
+        </div>
+        <div id="restaurant" class="work">
+            <img class="work_img" src="img/restaurant.png" alt="restaurant site" data-img="img/restaurant_full.jpg" data-caption="https://github.com/AlexJustFly/Restaurant-site-model">
+        </div>
+        <div id="hexal" class="work">
+            <img class="work_img" src="img/hexal.png" alt="hexal landing" data-img="img/hexal_full.jpg" data-caption="https://github.com/AlexJustFly/hexal">
+        </div>
+        <div id="chair" class="work">
+            <img class="work_img" src="img/chair.jpg" alt="hexal landing" data-img="img/chair_full.jpg" data-caption="https://github.com/AlexJustFly/shop">
+        </div>
+    </div>
+    <div id="modal_window" class="modal_window">
+        <a href="" class="modal_caption" id="modal_caption" target="_blank">Посмотреть на Github</a>
+        <span class="modal_close" id="modal_close">×</span>
+        <img class="modal_content" id="modal_content">
+    </div>
+</section>
+        <section class="about-me_wrapper" id="about-me">
+    <div class="page-wrapper_80 about-me">
+
+        <div class="about-me_header">
+            <div class="cup">
+            </div>
+        </div>
+       
+        <div class="about-me_body">
+            <div class="about-me_info">
+                Зовут меня <span class="about-me_attention">Алесь Петроченко</span>, я начинающий <span class="about-me_attention">Frontend developer</span>, сейчас нахожусь на уровне <span class="about-me_attention">верстальщика</span>
+            </div>
+            <div class="about-me_skills">
+                <p>На данный момент мой <span class="about-me_attention">стек техлологий</span> таков:</p>
+                <ul class="skills_list">
+                    <li class="skills_list-item good">VScode</li>
+                    <li class="skills_list-item good">HTML</li>
+                    <li class="skills_list-item good">CSS</li>
+                    <li class="skills_list-item base">JS</li>
+                    <li class="skills_list-item base">JQ</li>
+                    <li class="skills_list-item normal">Bootstrap</li>
+                    <li class="skills_list-item good">Gulp</li>
+                    <li class="skills_list-item normal">Git</li>
+                    <li class="skills_list-item good">SASS</li>
+                    <li class="skills_list-item good">Kit</li>
+                    <li class="skills_list-item good">Кроссбраузерная верстка</li>
+                    <li class="skills_list-item good">Адаптивная верстка</li>
+                    <li class="skills_list-item good">Респонсивная верстка</li>
+                </ul>
+                <p class="note">* Освоено на <span class="good-color">хорошем</span>, <span class="normal-color">нормальном</span>, <span class="base-color">базовом</span> уровне</p>
+            </div>
+        </div>   
+    </div>
+
+</section>
+        <section class="hints_wrapper" id="hints">
+    <div class="hints page-wrapper_80">
+        <a class="hints_link" href="hints-page.html">ЗДЕСЬ</a>
+        <p class="hints_header">*Шпаргалка создана не для обучающего материала и не гарантирует 100% правильное решение поставленной задачи</p>
+    </div>
+</section>
+    </main>
+    <footer>
+        
+    </footer>
+        
+
+        
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/scroller_anchors.js"></script>
+    <script src="js/scroller_toTop.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

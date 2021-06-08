@@ -1,0 +1,76 @@
+#html_hints-list
+    display: block
+
+#css_hints-list
+    display: none
+    .category_sublist-item
+        color: $css-color
+        
+#js_hints-list
+    display: none
+
+.hints-page
+    &_body
+        background-color: $black-flat-color
+        color: $main-color
+        height: 100%
+    &_main
+        height: calc( 100% - 54px )
+        @media screen and ( max-width: 768px )
+            width: 100% !important
+    &_category
+        &__wrapper
+            width: 100%
+            height: 100%
+            display: flex
+            justify-content: center
+            padding: 2rem 0
+            line-height: 2
+            
+
+.category
+    width: 100%
+    &_list
+    &_list-item
+        padding: 10px 0
+        &__heading
+            text-align: center
+    &_list-link
+        cursor: pointer
+        display: inline-block
+    &_sublist
+        color: $html-color
+        max-height: 0
+        overflow: hidden
+        transition: max-height 0.2s ease-out
+        text-align: center
+    &_sublist-item
+    &_sublist-link
+        display: inline-block
+        cursor: pointer
+    &_hint
+        width: 60%
+        display: flex
+        justify-content: center
+        align-items: center
+        &__wrapper
+            height: 70%
+            width: 90%
+            background-color: white
+        &_code-window
+            overflow-y: auto
+            height: 100%
+            background-color: $code-background
+
+.code_block
+    width: 100%
+    background-color: $code-background
+    color: $code-text
+    max-height: 0
+    overflow: hidden
+    transition: max-height 0.2s ease-out
+.code_content
+    padding: 10px
+    overflow: auto
+
+        

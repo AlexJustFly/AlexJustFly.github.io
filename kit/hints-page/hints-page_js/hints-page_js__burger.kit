@@ -1,0 +1,71 @@
+<div class="category_list-item">
+    <div class="category_list-item__heading">
+        <a class="category_list-link">Бургер меню</a>
+    </div>
+    <div class="code_block">
+        <div class="code_content">
+            <img src="img" alt="">
+            <pre><code>
+<span class="comment-color">&lt!-- HTML - Блок "burger" должен находится НАД тем блоком, который будет выпадать (быть его сиблингом)  --&gt</span>
+&lt<span class="tag-color">div</span> <span class="att-color">class</span>=<span class="att-value-color">"burger"</span>&gt
+    &lt<span class="tag-color">div</span> <span class="att-color">class</span>=<span class="att-value-color">"burger_button"</span> <span class="att-color">id</span>=<span class="att-value-color">"burger_button"</span>&gt <span class="comment-color">&lt!-- Класс для CSS, id для JS --&gt</span>
+        &lt<span class="tag-color">div</span> <span class="att-color">class</span>=<span class="att-value-color">"burger_button__bar1"</span>&gt&lt/<span class="tag-color">div</span>&gt
+        &lt<span class="tag-color">div</span> <span class="att-color">class</span>=<span class="att-value-color">"burger_button__bar2"</span>&gt&lt/<span class="tag-color">div</span>&gt
+        &lt<span class="tag-color">div</span> <span class="att-color">class</span>=<span class="att-value-color">"burger_button__bar3"</span>&gt&lt/<span class="tag-color">div</span>&gt
+    &lt/<span class="tag-color">div</span>&gt
+&lt/<span class="tag-color">div</span>&gt
+
+<span class="comment-color">// CSS</span>
+.burger {
+    display: flex;
+    justify-content: flex-end;
+}
+.burger_button {
+    padding: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+.burger_button__bar1, .burger_button__bar2, .burger_button__bar3 {
+    width: 35px
+    height: 5px
+    background-color: #333
+    margin: 6px 0
+    transition: 0.4s
+}
+.change .burger_button__bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .burger_button__bar2 {
+    opacity: 0
+}
+.change .burger_button__bar3 {
+    transform: rotate(45deg) translate(-8px, -8px)
+}
+
+<span class="comment-color">// JS - Код для кнопки бургера, расположенной НАД контентом, который будет выпадать. Блоки должны быть сиблингами</span>
+let burgerButton = document.getElementById('burger_button');
+burgerButton.onclick = function() {
+    burgerButton.classList.toggle("change");
+    let panel = this.parentNode.nextElementSibling;
+    if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+    } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+}
+            </pre></code>
+        </div>
+    </div>
+    <!-- <div class="category_sublist category_sublist__js">
+        <div class="category_sublist-item">
+            <a class="category_sublist-link">s</a>
+        </div> -->
+        
+        <!-- <div class="category_sublist-item">
+            <a class="category_sublist-link"></a>
+        </div>
+        <div class="code_block">
+            <div class="code_content"></div>
+        </div> -->
+    <!-- </div> -->
+</div>

@@ -1,0 +1,42 @@
+// ABOUT-ME
+.about-me
+    font-size: 0.75rem
+    &_wrapper
+        background-color: $black-flat-color
+        padding: 10% 0
+    &_header
+        display: flex
+        justify-content: center
+    &_body
+        display: flex
+        align-items: center
+        justify-content: space-around
+        line-height: 1.5
+        @media screen and ( max-width: 768px )
+            flex-direction: column
+    &_info
+        width: 40%
+        text-align: justify
+        text-indent: 2rem
+        color: white
+        @media screen and ( max-width: 768px )
+            width: 100%
+    &_skills
+        font-size: 0.75rem
+        width: 40%
+        color: white
+        @media screen and ( max-width: 768px )
+            width: 100%
+        ul
+            li
+                list-style-type: disc
+                margin-left: 2rem
+                &::marker
+                    font-size: 1.4rem
+    &_attention
+        color: $main-color
+        font-weight: 700
+        font-size: 1rem
+
+
+    

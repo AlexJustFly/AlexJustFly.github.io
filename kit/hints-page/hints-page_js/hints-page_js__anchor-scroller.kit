@@ -1,0 +1,41 @@
+<div class="category_list-item">
+    <div class="category_list-item__heading">
+        <a class="category_list-link">Плавный скрол по якорям (pure js)</a>
+    </div>
+    <div class="code_block">
+        <div class="code_content">
+            <img src="img" alt="">
+            <pre><code>
+let targetLink = document.querySelectorAll('a[data-anchor]');
+
+for (let i = 0; i < targetLink.length; i++) {
+    targetLink[i].addEventListener('click', function(){
+        let blockID = targetLink[i].dataset.anchor;
+        let targetElement = document.getElementById(blockID);
+        let tp = targetElement.offsetTop;
+        if (blockID == "my-works") {
+            tp-=70;
+        }
+        window.scrollTo({
+            top: tp,
+            left: 0,
+            behavior: "smooth"
+        });
+    })
+}
+            </pre></code>
+        </div>
+    </div>
+    <!-- <div class="category_sublist category_sublist__js">
+        <div class="category_sublist-item">
+            <a class="category_sublist-link">s</a>
+        </div> -->
+        
+        <!-- <div class="category_sublist-item">
+            <a class="category_sublist-link"></a>
+        </div>
+        <div class="code_block">
+            <div class="code_content"></div>
+        </div> -->
+    <!-- </div> -->
+</div>

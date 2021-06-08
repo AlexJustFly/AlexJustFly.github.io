@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta lang="ru">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Алесь Петроченко. Alex Petrochenko">
+    <meta name="description" content="Портфолио, Шпаргалка">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Alex P. hints</title>
+</head>
+<body class="hints-page_body">
+    <header>
+        <nav class="navigation page-wrapper_100">
+    <div class="page-wrapper_80">
+        <div class="burger">
+            <div class="burger_button" id="burger_button">
+                <div class="burger_button__bar1"></div>
+                <div class="burger_button__bar2"></div>
+                <div class="burger_button__bar3"></div>
+            </div>
+        </div>
+        <ul class="list">
+            <li class="list-item">
+                <a href="index.html" class="list-link list-link_code hints-page_link">Портфолио</a>
+            </li>
+            <li class="list-item">
+                <a id="html_hints" class="list-link list-link_code hints-page_link">HTML</a>
+            </li>
+            <li class="list-item">
+                <a id="css_hints" class="list-link list-link_code hints-page_link">CSS</a>
+            </li>
+            <li class="list-item">
+                <a id="js_hints" class="list-link list-link_code hints-page_link">JS</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+    </header>
+    <main class="hints-page_main page-wrapper_80">
+        <section class="hints-page_category__wrapper">
+            <div id="html_hints-list" class="category">
+    <div class="category_list">
+        <div class="category_list-item">
+    <div class="category_list-item__heading">
+            <a class="category_list-link">Пополняется...</a>
+    </div>
+    <!-- <div class="category_sublist category_sublist__html">
+        <div class="category_sublist-item">
+            <a class="category_sublist-link"></a>
+        </div>
+        <div class="code_block">
+            <div class="code_content">2</div>
+        </div>
+        <div class="category_sublist-item">
+            <a class="category_sublist-link"></a>
+        </div>
+        <div class="code_block">
+            <div class="code_content"></div>
+        </div>
+    </div> -->
+</div>
+    </div>
+</div>
+            <div id="css_hints-list" class="category">
+    <div class="category_list">
+        <div class="category_list-item">
+    <div class="category_list-item__heading">
+        <a class="category_list-link">Пополняется...</a>
+    </div>
+    <div class="category_sublist category_sublist__css">
+        <div class="category_sublist-item">
+            <a class="category_sublist-link">Пополняется...</a>
+        </div>
+        <div class="code_block">
+            <div class="code_content">Пополняется...</div>
+        </div>
+        <div class="category_sublist-item">
+            <a class="category_sublist-link">Пополняется...</a>
+        </div>
+        <div class="code_block">
+            <div class="code_content">Пополняется...</div>
+        </div>
+    </div>
+</div>
+        <div class="category_list-item">
+    <div class="category_list-item__heading">
+            <a class="category_list-link">Пополняется...</a>
+    </div>
+    <!-- <div class="category_sublist category_sublist__css">
+        <div class="category_sublist-item">
+            <a class="category_sublist-link">1</a>
+        </div>
+        <div class="code_block">
+            <div class="code_content">2</div>
+        </div>
+    </div> -->
+</div>   
+    </div>
+</div>
+            <div id="js_hints-list" class="category">
+    <div class="category_list">
+        <div class="category_list-item">
+    <div class="category_list-item__heading">
+        <a class="category_list-link">Бургер меню</a>
+    </div>
+    <div class="code_block">
+        <div class="code_content">
+            <img src="img" alt="">
+            <pre><code>
+<span class="comment-color">&lt!-- HTML - Блок "burger" должен находится НАД тем блоком, который будет выпадать (быть его сиблингом)  --&gt</span>
+&lt<span class="tag-color">div</span> <span class="att-color">class</span>=<span class="att-value-color">"burger"</span>&gt
+    &lt<span class="tag-color">div</span> <span class="att-color">class</span>=<span class="att-value-color">"burger_button"</span> <span class="att-color">id</span>=<span class="att-value-color">"burger_button"</span>&gt <span class="comment-color">&lt!-- Класс для CSS, id для JS --&gt</span>
+        &lt<span class="tag-color">div</span> <span class="att-color">class</span>=<span class="att-value-color">"burger_button__bar1"</span>&gt&lt/<span class="tag-color">div</span>&gt
+        &lt<span class="tag-color">div</span> <span class="att-color">class</span>=<span class="att-value-color">"burger_button__bar2"</span>&gt&lt/<span class="tag-color">div</span>&gt
+        &lt<span class="tag-color">div</span> <span class="att-color">class</span>=<span class="att-value-color">"burger_button__bar3"</span>&gt&lt/<span class="tag-color">div</span>&gt
+    &lt/<span class="tag-color">div</span>&gt
+&lt/<span class="tag-color">div</span>&gt
+
+<span class="comment-color">// CSS</span>
+.burger {
+    display: flex;
+    justify-content: flex-end;
+}
+.burger_button {
+    padding: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+.burger_button__bar1, .burger_button__bar2, .burger_button__bar3 {
+    width: 35px
+    height: 5px
+    background-color: #333
+    margin: 6px 0
+    transition: 0.4s
+}
+.change .burger_button__bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .burger_button__bar2 {
+    opacity: 0
+}
+.change .burger_button__bar3 {
+    transform: rotate(45deg) translate(-8px, -8px)
+}
+
+<span class="comment-color">// JS - Код для кнопки бургера, расположенной НАД контентом, который будет выпадать. Блоки должны быть сиблингами</span>
+let burgerButton = document.getElementById('burger_button');
+burgerButton.onclick = function() {
+    burgerButton.classList.toggle("change");
+    let panel = this.parentNode.nextElementSibling;
+    if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+    } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+}
+            </pre></code>
+        </div>
+    </div>
+    <!-- <div class="category_sublist category_sublist__js">
+        <div class="category_sublist-item">
+            <a class="category_sublist-link">s</a>
+        </div> -->
+        
+        <!-- <div class="category_sublist-item">
+            <a class="category_sublist-link"></a>
+        </div>
+        <div class="code_block">
+            <div class="code_content"></div>
+        </div> -->
+    <!-- </div> -->
+</div>
+        <div class="category_list-item">
+    <div class="category_list-item__heading">
+        <a class="category_list-link">Модальное окно галлереи</a>
+    </div>
+    <div class="code_block">
+        <div class="code_content">
+            <img src="img" alt="">
+            <pre><code>
+// HTML
+&ltdiv id="modal_window" class="modal_window">
+    &lta href="" class="modal_caption" id="modal_caption" target="_blank">Посмотреть на Github&lt/a>
+    &ltspan class="modal_close" id="modal_close">×&lt/span>
+    &ltimg class="modal_content" id="modal_content">
+&lt/div>
+
+&ltdiv id="multipage" class="work">
+    &ltimg class="work_img" src="img/multipage.png" alt="multipage site" data-img="img/multipage_full.jpg" data-caption="https://github.com/AlexJustFly/multipage-site-model">
+&lt/div>
+
+
+
+// CSS
+.modal_window
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 1
+    overflow: auto
+    background-color: #000000bb
+    display: none
+    animation-duration: 0.5s
+    padding: 50px 0
+.modal_content
+    margin: 0 auto
+    color: white
+    width: 90vmin
+    display: block
+.modal_close
+    color: white
+    position: absolute
+    top: 1rem
+    right: 1.5rem
+    max-width: 25px
+    font-weight: bold
+    font-size: 3rem
+    transition: .3s
+    cursor: pointer
+    z-index: 2
+    @media screen and ( max-width: 768px )
+        top: 0.5rem
+        right: 1rem
+.modal_caption
+    display: block
+    margin: 0 auto
+    text-align: center
+    padding: 10px 0 20px 0
+    font-weight: bold
+    color: white
+
+@keyframes open
+  from
+    opacity: 0
+    visibility: hidden
+  to
+    opacity: 1
+    visibility: visible
+
+@keyframes close
+  from
+    opacity: 1
+    visibility: visible
+  to 
+    opacity: 0
+    visibility: hidden
+
+
+// JS
+// MODAL WINDOW
+let myWorkImg = document.getElementsByClassName('work_img');
+let modalWindow = document.getElementById('modal_window');
+let modalImg = document.getElementById('modal_content');
+let modalClose = document.getElementById('modal_close');
+let modalCaption = document.getElementById('modal_caption');
+// open modal window
+for (let i = 0; i < myWorkImg.length; i++) {
+    myWorkImg[i].addEventListener("click", function() {
+      modalImg.src = myWorkImg[i].dataset.img;
+      modalImg.alt = myWorkImg[i].alt;
+      modalCaption.href = myWorkImg[i].dataset.caption;
+      modalWindow.style.animationName = "open";
+      modalWindow.style.display = "block";
+    });
+}
+// close modal on X
+modalClose.onclick = function() {
+  modalWindow.style.animationName = "close";
+  setTimeout(function(){modalWindow.style.display = "none"}, 300)
+}
+// close modal on modalWindow
+modalWindow.addEventListener("click", function(){
+  if (event.target != modalImg && event.target != modalCaption) {
+    modalWindow.style.animationName = "close";
+    setTimeout(function(){modalWindow.style.display = "none"}, 300)
+  }
+})
+</pre></code>
+</div>
+</div>
+<!-- <div class="category_sublist category_sublist__js">
+<div class="category_sublist-item">
+    <a class="category_sublist-link">s</a>
+</div> -->
+
+<!-- <div class="category_sublist-item">
+    <a class="category_sublist-link"></a>
+</div>
+<div class="code_block">
+    <div class="code_content"></div>
+</div> -->
+<!-- </div> -->
+</div>
+        <div class="category_list-item">
+    <div class="category_list-item__heading">
+        <a class="category_list-link">Плавный скрол по якорям (pure js)</a>
+    </div>
+    <div class="code_block">
+        <div class="code_content">
+            <img src="img" alt="">
+            <pre><code>
+let targetLink = document.querySelectorAll('a[data-anchor]');
+
+for (let i = 0; i < targetLink.length; i++) {
+    targetLink[i].addEventListener('click', function(){
+        let blockID = targetLink[i].dataset.anchor;
+        let targetElement = document.getElementById(blockID);
+        let tp = targetElement.offsetTop;
+        if (blockID == "my-works") {
+            tp-=70;
+        }
+        window.scrollTo({
+            top: tp,
+            left: 0,
+            behavior: "smooth"
+        });
+    })
+}
+            </pre></code>
+        </div>
+    </div>
+    <!-- <div class="category_sublist category_sublist__js">
+        <div class="category_sublist-item">
+            <a class="category_sublist-link">s</a>
+        </div> -->
+        
+        <!-- <div class="category_sublist-item">
+            <a class="category_sublist-link"></a>
+        </div>
+        <div class="code_block">
+            <div class="code_content"></div>
+        </div> -->
+    <!-- </div> -->
+</div>
+        <div class="category_list-item">
+    <div class="category_list-item__heading">
+        <a class="category_list-link">Плавный скрол ToTop (JQ)</a>
+    </div>
+    <div class="code_block">
+        <div class="code_content">
+            <img src="img" alt="">
+            <pre><code>
+// HTML
+&ltsvg id="scroller" width="100" height="100">
+    &ltcircle class="svg_circle" cx="40" cy="40" r="35">&lt/circle>
+    &ltpolyline class="svg_polyline" points="20,50 40,30 60,50">&lt/polyline>
+&lt/svg>
+
+// CSS
+#scroller
+    display: none
+    position: fixed
+    bottom: 0
+    right: 0
+    cursor: pointer
+    z-index: 1000
+.svg_circle
+    stroke: $shade-color
+    stroke-width: 5
+    fill: transparent
+.svg_polyline
+    stroke-width: 10
+    stroke: $shade-color
+    fill: none
+
+
+// JS
+jQuery(document).ready(function(){
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 600) {
+            $('#scroller').fadeIn();
+        } else {
+            $('#scroller').fadeOut();
+        }
+    });
+    $('#scroller').click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 400);
+        return false;
+    });
+});
+            </pre></code>
+        </div>
+    </div>
+    <!-- <div class="category_sublist category_sublist__js">
+        <div class="category_sublist-item">
+            <a class="category_sublist-link">s</a>
+        </div> -->
+        
+        <!-- <div class="category_sublist-item">
+            <a class="category_sublist-link"></a>
+        </div>
+        <div class="code_block">
+            <div class="code_content"></div>
+        </div> -->
+    <!-- </div> -->
+</div>
+    </div>
+</div>
+        </section>
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+    <script src="js/hitn-list.js"></script>
+    <script src="js/accordeon.js"></script>
+    <script src="js/burger.js"></script>
+</body>
+</html>
