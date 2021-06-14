@@ -298,7 +298,7 @@ modalWindow.addEventListener("click", function(){
 </div>
         <div class="category_list-item">
     <div class="category_list-item__heading">
-        <a class="category_list-link">Плавный скрол по якорям (pure js)</a>
+        <a class="category_list-link">Плавный скрол по якорям</a>
     </div>
     <div class="code_block">
         <div class="code_content">
@@ -401,6 +401,88 @@ jQuery(document).ready(function(){
         </div> -->
     <!-- </div> -->
 </div>
+        <div class="category_list-item">
+    <div class="category_list-item__heading">
+        <a class="category_list-link">Аккордеон</a>
+    </div>
+    <div class="code_block">
+        <div class="code_content">
+            <img src="img" alt="">
+            <pre><code>
+// HTML
+&ltdiv>
+    &ltdiv class="accordeon">
+        &lta class="accordeon-link">...&lt/a>
+    &lt/div>
+    &ltdiv class="accordeon-content">
+        &ltdiv class="accordeon-content__wrapper">
+            ...
+        &lt/div>
+    &lt/div>
+    &ltdiv class="subaccordeon">
+        &ltdiv class="subaccordeon-item">
+            &lta class="subaccordeon-link">...&lt/a>
+        &lt/div>
+        &ltdiv class="subaccordeon-content">
+            &ltdiv class="subaccordeon-content__wrapper">...&lt/div>
+        &lt/div>
+    &lt/div>
+&lt/div>
+
+
+// CSS 
+.accordeon-content, subaccordeon-content
+    max-height: 0
+    overflow: hidden
+    transition: max-height 0.2s ease-out
+
+
+// JS
+// ACCORDEON
+let accordeonLink = document.getElementsByClassName('accordeon-link');
+
+for (let i = 0; i < accordeonLink.length; i++) {
+    accordeonLink[i].addEventListener("click", function() {
+      let panel = this.parentNode.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+}
+
+// ACCORDEON IN ACCORDEON
+let subaccordeonLink = document.getElementsByClassName('subaccordeon-link');
+
+for (let i = 0; i < subaccordeonLink.length; i++) {
+    subaccordeonLink[i].addEventListener("click", function() {
+      let panel = this.parentNode.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.parentNode.style.maxHeight = parseInt(panel.parentNode.style.maxHeight) + panel.scrollHeight + 'px';
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+}
+            </pre></code>
+        </div>
+    </div>
+    <!-- <div class="category_sublist category_sublist__js">
+        <div class="category_sublist-item">
+            <a class="category_sublist-link">s</a>
+        </div> -->
+        
+        <!-- <div class="category_sublist-item">
+            <a class="category_sublist-link"></a>
+        </div>
+        <div class="code_block">
+            <div class="code_content"></div>
+        </div> -->
+    <!-- </div> -->
+</div>
+        
     </div>
 </div>
         </section>

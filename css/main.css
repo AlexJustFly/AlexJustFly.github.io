@@ -379,7 +379,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hexal:hover {
-  transform: translate(20%, 5%) rotate(-2deg) scale(1.02);
+  transform: translate(20%, 5%) rotate(0deg) scale(1.02);
   box-shadow: 1px 1px 10px 1px;
 }
 
@@ -388,7 +388,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: translate(5%, 15%) rotate(-2deg);
   }
   #hexal:hover {
-    transform: translate(5%, 15%) scale(1.02);
+    transform: translate(5%, 15%) rotate(0) scale(1.02);
   }
 }
 
@@ -397,7 +397,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: translate(0%, -10%) rotate(1deg);
   }
   #hexal:hover {
-    transform: translate(0%, -10%) rotate(1deg) scale(1.02);
+    transform: translate(0%, -10%) rotate(0) scale(1.02);
   }
 }
 
